@@ -1,4 +1,4 @@
-image  = imread('Fig0221(a)(ctskull-256).tif')
+image  = imread('./Images/ctskull-256.tif')
 for r=1:size(image,1)
     for c = 1:size(image,2)
         if image(r,c) > 128
@@ -9,4 +9,4 @@ for r=1:size(image,1)
     end
 end
 
-imwrite(image,'Processed.tif')
+imwrite(image,'./Images/ctskull-256-processed.tif');
