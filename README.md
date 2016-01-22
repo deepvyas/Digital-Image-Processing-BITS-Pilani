@@ -12,4 +12,4 @@
   It is booksite for Digital Image Processing by Gonzaloez and Woods
   
   
-  All files on this repo are ##for educational purpose with no intentions of promoting unfair means in any evaluative component.
+  All files on this repo are <strong>for educational purpose with no intentions of promoting unfair means in any evaluative component.
