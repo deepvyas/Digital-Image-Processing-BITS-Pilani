@@ -9,4 +9,4 @@ for r=1:size(image,1)
     end
 end
 
-imwrite(image,'./Images/ctskull-256-processed.tif');
+imwrite(image,'./Images/ctskull-processed.tif');
