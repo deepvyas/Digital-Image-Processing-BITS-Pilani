@@ -1,0 +1,22 @@
+img = imread(input('Enter file name :'));
+figure(1);
+[m n] = size(img);
+imshow(img,[]);
+ft = fftshift(fft2(img));
+abs_ft = abs(ft);
+figure(2);
+imshow(abs_ft,[]);
+ft_log = log(1+abs_ft);
+figure(3);
+imshow(ft_log,[]);
+ft(1:320,338:340) = 0;
+ft(350:m,338:340) = 0;
+abs_ft = abs(ft);
+ft_log = log(1+abs_ft);
+figure(4);
+imshow(ft_log,[]);
+
+ifft = ifft2(fftshift(ft));
+abs_ift = abs(ifft);
+figure(5);
+imshow(abs_ift,[]);
